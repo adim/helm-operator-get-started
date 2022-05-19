@@ -1,0 +1,19 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: minio
+  namespace: dev
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: semver:~0.3
+spec:
+  releaseName: minio
+  chart:
+    repository: https://charts.bitnami.com/bitnami
+    name: minio
+    version: 11.3.5
+  values:
+    ingress:
+      enabled: false
+    image: 
+      repository: bitnami/minio
