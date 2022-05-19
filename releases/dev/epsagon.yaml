@@ -2,12 +2,11 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: epsagon
-  namespace: dev
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: semver:~0.3
 spec:
-  releaseName: cluster-agent
+  releaseName: epsagon-cluster-agent
   chart:
     repository: https://helm.epsagon.com
     name: epsagon   
