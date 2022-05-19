@@ -10,7 +10,8 @@ spec:
   releaseName: epsagon
   chart:
     repository: https://helm.epsagon.com
-    name: epsagon    
+    name: epsagon   
+    version: 0.1.19 
   values:
     ingress:
       enabled: false
