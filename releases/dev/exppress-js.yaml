@@ -2,6 +2,10 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: expressjs-k8s
+  namespace: dev
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:dev-*
 spec:
   chart:
     repository: https://alexellis.github.io/expressjs-k8s/
