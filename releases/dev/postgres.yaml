@@ -1,0 +1,18 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: postgresql
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: semver:~0.3
+spec:
+  releaseName: postgresql
+  chart:
+    repository: https://charts.helm.sh/stable
+    name: epsagon   
+    #version: 0.1.19 
+  values:
+    ingress:
+      enabled: false
+    image: 
+      repository: stable/postgresql
