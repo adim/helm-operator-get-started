@@ -4,7 +4,7 @@ metadata:
   name: postgresql
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: semver:~0.3
+    filter.fluxcd.io/chart-image: semver:~8.6
 spec:
   releaseName: postgresql
   chart:
