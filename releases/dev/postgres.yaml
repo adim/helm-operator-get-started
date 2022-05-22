@@ -10,10 +10,10 @@ spec:
   releaseName: bitnami-postgresql
   chart:
     repository: https://charts.bitnami.com/bitnami
-    name: postgresql   
+    name: postgresql
     #version: 11.2.4
   values:
     ingress:
       enabled: false
     image:
-      repository: bitnami/postgresql
+      repository: bitnami/postgresql:11.2.0
