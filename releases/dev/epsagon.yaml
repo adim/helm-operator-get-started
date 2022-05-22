@@ -4,7 +4,7 @@ metadata:
   name: epsagon
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: semver:~0.3
+    filter.fluxcd.io/chart-image: semver:~0.1
 spec:
   releaseName: epsagon-cluster-agent
   chart:
