@@ -1,12 +1,12 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: postgresql
+  name: bitnami-postgresql
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: semver:~8.6
 spec:
-  releaseName: postgresql
+  releaseName: bitnami-postgresql
   chart:
     repository: https://charts.bitnami.com/bitnami
     name: postgresql   
