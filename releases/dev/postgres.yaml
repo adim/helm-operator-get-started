@@ -10,7 +10,7 @@ spec:
   chart:
     repository: https://charts.bitnami.com/bitnami
     name: postgresql   
-    #version: 8.6.4
+    version: 11.2.4
   values:
     ingress:
       enabled: false
