@@ -16,4 +16,4 @@ spec:
     ingress:
       enabled: false
     image:
-      repository: bitnami/postgresql:11.2.0
+      repository: bitnami/postgresql
