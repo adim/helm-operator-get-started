@@ -15,4 +15,4 @@ spec:
     ingress:
       enabled: false
     image: 
-      repository: stable/postgresql
+      repository: stable
