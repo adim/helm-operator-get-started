@@ -2,9 +2,9 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: postgresql-2
+  name: postgresql-3
   annotations:
-    fluxcd.io/automated: "true"
+    fluxcd.io/automated: "false"
     filter.fluxcd.io/chart-image: semver:~14.0
 spec:
   releaseName: bitnami-postgresql
@@ -16,4 +16,4 @@ spec:
     ingress:
       enabled: false
     image:
-      repository: bitnami/postgresql:14.0.0
+      repository: bitnami/postgresql
