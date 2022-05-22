@@ -4,7 +4,7 @@ metadata:
   name: bitnami-postgresql
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: semver:~8.6
+    filter.fluxcd.io/chart-image: semver:~11.2
 spec:
   releaseName: bitnami-postgresql
   chart:
