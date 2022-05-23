@@ -1,9 +1,9 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: epsagon
+  name: epsagon-agent
   annotations:
-    fluxcd.io/automated: "true"
+    fluxcd.io/automated: "false"
     filter.fluxcd.io/chart-image: semver:~0.1
 spec:
   releaseName: epsagon-cluster-agent
